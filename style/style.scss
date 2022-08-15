@@ -86,7 +86,6 @@ a {
 	padding-bottom: 46px;
 }
 .category {
-	background-color: rgb(42, 140, 108);
 	padding-top: 46px;
 	&__wrapper {
 		display: flex;
@@ -98,8 +97,10 @@ a {
 	&__item {
 		width: 306px;
 		height: 304px;
+		position: relative;
 	}
 	&__title {
+		margin-bottom: 70px;
 		margin-left: 60px;
 		font-style: normal;
 		font-weight: 600;
@@ -111,4 +112,15 @@ a {
 	&__img {
 		margin-left: 60px;
 	}
+
+	&__img-back {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+	}
+}
+.position {
+	position: relative;
+	top: 0px;
 }

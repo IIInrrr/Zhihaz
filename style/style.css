@@ -82,7 +82,6 @@ a {
 }
 
 .category {
-  background-color: rgb(42, 140, 108);
   padding-top: 46px;
 }
 .category__wrapper {
@@ -93,8 +92,10 @@ a {
 .category__item {
   width: 306px;
   height: 304px;
+  position: relative;
 }
 .category__title {
+  margin-bottom: 70px;
   margin-left: 60px;
   font-style: normal;
   font-weight: 600;
@@ -104,4 +105,15 @@ a {
 }
 .category__img {
   margin-left: 60px;
+}
+.category__img-back {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.position {
+  position: relative;
+  top: 0px;
 }/*# sourceMappingURL=style.css.map */
