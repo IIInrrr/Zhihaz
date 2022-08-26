@@ -98,6 +98,7 @@ a {
 		width: 306px;
 		height: 304px;
 		position: relative;
+		border: 2px solid black;
 	}
 	&__title {
 		margin-bottom: 70px;
@@ -110,7 +111,9 @@ a {
 		color: #202020;
 	}
 	&__img {
-		margin-left: 60px;
+		position: absolute;
+		right: 0;
+		bottom: 10%;
 	}
 
 	&__img-back {
@@ -123,4 +126,28 @@ a {
 .position {
 	position: relative;
 	top: 0px;
+}
+.back_img {
+	height: 1000px;
+	background-image: url("../img/category/category3.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.transform {
+	position: relative;
+	padding: 100px;
+	height: 400px;
+	background-color: #d2374a;
+	&::before {
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		content: "Zhuldyz";
+		height: 100px;
+		width: 100px;
+		background-color: aqua;
+		transform: translate(-50%) scale(1.5);
+
+		border-radius: 50%;
+	}
 }
