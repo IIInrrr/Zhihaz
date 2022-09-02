@@ -1,3 +1,9 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body,
 ul,
 li,
@@ -93,7 +99,7 @@ a {
   width: 306px;
   height: 304px;
   position: relative;
-  border: 2px solid black;
+  border: none;
 }
 .category__title {
   margin-bottom: 70px;
@@ -116,32 +122,56 @@ a {
   z-index: -1;
 }
 
+.cash-back {
+  padding-top: 50px;
+}
+.cash-back__box {
+  position: relative;
+  padding: 62px 33px 54px;
+  background: #fdf6e6;
+  border-radius: 5px;
+  width: 628px;
+  height: 304px;
+}
+.cash-back__title {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 49px;
+  color: #202020;
+}
+.cash-back__text {
+  width: 311px;
+  height: 37px;
+  left: 115px;
+  top: 3817.77px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #434343;
+}
+.cash-back__percent {
+  display: flex;
+  align-items: center;
+}
+.cash-back__FFF {
+  font-weight: 800;
+  font-size: 16px;
+  color: #d2374a;
+}
+.cash-back__five {
+  font-weight: 800;
+  font-size: 48px;
+  color: #d2374a;
+}
+.cash-back__img {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+
 .position {
   position: relative;
   top: 0px;
-}
-
-.back_img {
-  height: 1000px;
-  background-image: url("../img/category/category3.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.transform {
-  position: relative;
-  padding: 100px;
-  height: 400px;
-  background-color: #d2374a;
-}
-.transform::before {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  content: "Zhuldyz";
-  height: 100px;
-  width: 100px;
-  background-color: aqua;
-  transform: translate(-50%) scale(1.5);
-  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
