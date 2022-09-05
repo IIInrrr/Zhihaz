@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
 *,
 ::after,
 ::before {
 	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
 }
 
 body,
@@ -12,7 +15,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
 	margin: 0;
 	padding: 0;
 }
@@ -183,6 +187,63 @@ a {
 		right: 0;
 		bottom: 10%;
 	}
+}
+.company {
+	padding-top: 46px;
+	&__wrapper {
+		display: flex;
+	}
+	&__box {
+		&:first-child {
+			padding-right: 15px;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 38px;
+		line-height: 45px;
+		/* identical to box height */
+
+		color: #202020;
+	}
+
+	&__cont {
+		padding-top: 18px;
+		width: 589.05px;
+
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 35px;
+
+		color: #202020;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 26px;
+		/* or 162% */
+
+		color: #848484;
+	}
+	&__button {
+		padding: 14px 24px;
+		border: none;
+		background: #d2374a;
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+		border-radius: 5px;
+	}
+	&__span {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+		/* identical to box height */
+
+		color: #ffffff;
+	}
+}
+.company__text + .company__text {
+	margin-top: 35px;
 }
 .position {
 	position: relative;
