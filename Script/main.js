@@ -14,10 +14,8 @@ function Plus(a, b) {
 	a + b;
 }
 console.log(Plus(6, 4));
-let obj = {
-	name: "ali",
-	SayHello() {
-		console.log(obj.name);
-	},
-};
-obj.SayHello();
+
+let obj = { username: "Ali" };
+console.log(obj["username"]);
+let arr = ["Ali", "Star", "lol"];
+console.log(arr[1]);
